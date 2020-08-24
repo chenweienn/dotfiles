@@ -1,0 +1,19 @@
+{
+  "diagnostic.displayByAle": true,
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home"
+    },
+    {
+      "name": "JavaSE-14",
+      "path": "/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home",
+      "default": true
+    }
+  ]  
+}

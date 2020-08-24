@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/wchen/Documents/Tickets/2020/07/250337-olivier-windows-cell/logs/responsive/tmp'
+let g:netrw_dirhist_5='/Users/wchen/Documents/Tickets/2020/07/250337-olivier-windows-cell/logs/responsive/tmp/agent-log-1186d3e8-4a3d-41d4-8559-895c3937d77a'
+let g:netrw_dirhist_4='/Users/wchen/Documents/Tickets/2020/06/245416-fidelity-concourse-hung/support-bundle-amtpg301-20200609161655Z/support-amtpg301-openstack-rtpz2-bosh-logs-20200609161036Z/amtpg301-web.11e83bae-f86d-4fb7-a160-33bc2a58ec5a.2020-06-09-16-09-09/web'
+let g:netrw_dirhist_3='/Users/wchen/Documents/Tickets/2020/05/244434-oocl-mysql/cf-d7d6d4eda8923a92a974.diego_cell.1d305920-a8ff-4e09-be1c-c08d7454dbfc-20200602-032238-222852405/bpm'
+let g:netrw_dirhist_2='/Users/wchen/Documents/Tickets/2020/04/240240-apps-usage/accounting-report-2020'
+let g:netrw_dirhist_1='/Users/wchen/Documents/KnowledgeBase/Tanzu/TKG/TKG-vsphere-install/workload-ldap-vsphere/contour/examples'
+let g:netrw_dirhist_0='/Users/wchen/Documents/Tickets/2020/04/240183-garmin-app-down/cf-1f446a37555f8b1d2434.diego_cell.eef0cc82-94da-4a13-b77c-7ef999e9d608-20200421-220700-516441533/garden'
+let g:netrw_dirhist_9='/Users/wchen/Documents/Tickets/2020/03/237067-bocomm-api-down/new3/mysql-6ae83fba90e0/cf-02496fedb1d4a4403d65.mysql-20200414-091116-594296387/mysql.fba5d7b9-69c8-401e-ae5a-86374eb59dd8.2020-04-14-09-08-45'
+let g:netrw_dirhist_8='/Users/wchen/Documents/Tickets/2020/03/237067-bocomm-api-down/new3/mysql-6ae83fba90e0/cf-02496fedb1d4a4403d65.mysql-20200414-091116-594296387/mysql.fba5d7b9-69c8-401e-ae5a-86374eb59dd8.2020-04-14-09-08-45/bosh-dns'
+let g:netrw_dirhist_7='/Users/wchen/Documents/KnowledgeBase/Tanzu/TKG/Binary/vmware-kubernetes-v1.0.0+vmware.1/tkg-extension-manifest-v1.0.0+vmware.1/manifest/tkg-extensions-v1.0.0/authentication/dex'
