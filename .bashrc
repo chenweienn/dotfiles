@@ -24,7 +24,7 @@ BWHT="\[\033[47m\]" # background white
 # export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\t \u@\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]$ "
 export PS1="\[\e]0;\u@\h: \w\a\]$FGRN\t \u$FYEL@$FCYN\W$RS$ "
 
-export PATH=/Users/wchen/.jenv/shims:/Users/wchen/packages/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/wchen/Library/Python/2.7/bin
+export PATH=/Users/wchen/packages/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/wchen/Library/Python/2.7/bin
 
 # setup GOPATH
 export GOPATH=$HOME/go
@@ -36,8 +36,8 @@ if [ -f '/Users/wchen/packages/google-cloud-sdk/path.bash.inc' ]; then source '/
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/wchen/packages/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/wchen/packages/google-cloud-sdk/completion.bash.inc'; fi
 
-# jenv
-export PATH="$HOME/.jenv/bin:$PATH"
+# jenv, conflicting with CoC
+export PATH="$HOME/.jenv/shims:$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # bash completion for Cloud Foundry CLI
@@ -82,3 +82,5 @@ alias k=kubectl
 complete -F __start_kubectl k
 alias ns=kubens
 alias ctx=kubectx
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
