@@ -37,8 +37,8 @@ if [ -f '/Users/wchen/packages/google-cloud-sdk/path.bash.inc' ]; then source '/
 if [ -f '/Users/wchen/packages/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/wchen/packages/google-cloud-sdk/completion.bash.inc'; fi
 
 # jenv, conflicting with CoC
-export PATH="$HOME/.jenv/shims:$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# export PATH="$HOME/.jenv/shims:$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 
 # bash completion for Cloud Foundry CLI
 # https://raw.githubusercontent.com/cloudfoundry/cli/master/ci/installers/completion/cf
@@ -69,6 +69,9 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # openssl 1.1
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
+
+# add tcserver for test
+export PATH=/Users/wchen/Downloads/tc-server/pivotal-tc-server/standard-4.0.7.RELEASE:$PATH
 
 
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
