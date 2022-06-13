@@ -58,7 +58,7 @@ complete -F _cf-cli cf
 export PATH=$PATH:/usr/local/mysql/bin
 
 # add python
-export PATH=$PATH:/Users/wchen/Library/Python/2.7/bin
+export PATH=$PATH:/Users/wchen/Library/Python/2.7/bin:/Users/wchen/Library/Python/3.8/bin
 
 # add sslkeylog.log
 export SSLKEYLOGFILE=/Users/wchen/tmp/sslkeylog.log
@@ -79,11 +79,14 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# for getting newer git installed manually
+export PATH=/usr/local/git/bin:$PATH
 
 # kubectl shortcuts
 alias k=kubectl
 complete -F __start_kubectl k
 alias ns=kubens
 alias ctx=kubectx
+complete -F _kube_contexts ctx ns
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
