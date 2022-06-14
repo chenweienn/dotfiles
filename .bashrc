@@ -90,3 +90,6 @@ alias ctx=kubectx
 complete -F _kube_contexts ctx ns
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# add brew path
+eval "$(/opt/homebrew/bin/brew shellenv)"

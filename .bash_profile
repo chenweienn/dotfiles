@@ -19,8 +19,10 @@ if [ -f '/Users/wchen/packages/google-cloud-sdk/path.bash.inc' ]; then source '/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/wchen/packages/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/wchen/packages/google-cloud-sdk/completion.bash.inc'; fi
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+
+# jenv
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 
 # bash completion for Cloud Foundry CLI
 # https://raw.githubusercontent.com/cloudfoundry/cli/master/ci/installers/completion/cf
@@ -48,4 +50,13 @@ export SSLKEYLOGFILE=/Users/wchen/tmp/sslkeylog.log
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# add path for brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+#export HOMEBREW_PREFIX="/opt/homebrew";
+#export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+#export HOMEBREW_REPOSITORY="/opt/homebrew";
+#export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
+#export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+#export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
